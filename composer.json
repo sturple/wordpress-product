@@ -1,0 +1,30 @@
+{
+    "name" : "sturple/wordpress-product",
+    "version" : "0.0.1",
+    "description" : "Wordpress plugin to add products custom post type ",
+    "keywords" : ["wordpress", "plugin","products","FGMS"],
+    "homepage" : "https://github.com/sturple/wordpress-product",
+    "license" : "GPL-3.0",
+    "type" : "wordpress-plugin",
+    "authors" : [
+        {
+            "name" : "Shawn Turple",
+            "email" : "shawn@turple.ca",
+            "homepage" : "http://turple.ca",
+            "role" : "Developer"
+        },
+        {
+            "name" : "Robert Leahy",
+            "email" : "rleahy@rleahy.ca",
+            "role" : "Developer"
+        }
+
+    ],
+    "require": {
+        "php" : ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "autoload": {
+        "psr-4" : {"Fgms\\" : "src/Fgms/"}
+    }
+}
