@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Wordpress Social
- * Plugin URI: https://github.com/sturple/wordpress-social/
- * Description: Wordpress plugin to add social integration for twitter and facebook
+ * Plugin Name: Wordpress Product
+ * Plugin URI: https://github.com/sturple/wordpress-product/
+ * Description: Wordpress plugin to add products to WordPress
  * Version: 0.0.1
  * Author: Shawn Turple / Robert Leahy
  * Author URI: http://turple.ca
