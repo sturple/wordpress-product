@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Wordpress Social
  * Plugin URI: https://github.com/sturple/wordpress-social/
- * Description: Wordpress plugin to add social intigration for twitter and facebook
+ * Description: Wordpress plugin to add social integration for twitter and facebook
  * Version: 0.0.1
  * Author: Shawn Turple / Robert Leahy
  * Author URI: http://turple.ca
