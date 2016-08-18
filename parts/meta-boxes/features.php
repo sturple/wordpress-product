@@ -87,3 +87,30 @@ piklist('field',[
         ]
     ]
 ]);
+
+piklist('field',[
+    'type' => 'group',
+    'field' => 'videos',
+    'label' => __('Videos'),
+    'add_more' => true,
+    'fields' => [
+        [
+            'type' => 'text',
+            'label' => __('Title'),
+            'field' => 'video-title',
+            'columns' => 12
+        ],
+        [
+            'type' => 'file',
+            'field' => 'video-image',
+            'label' => 'Image',
+            'columns' => 12
+        ],
+        [
+            'type' => 'text',
+            'label' => __('YouTube ID'),
+            'field' => 'video-youtube-id',
+            'columns' => 12
+        ]
+    ]
+]);
