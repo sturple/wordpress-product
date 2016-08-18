@@ -30,3 +30,39 @@ piklist('field',[
         ]
     ]
 ]);
+
+piklist('field',[
+    'type' => 'group',
+    'field' => 'document-downloads',
+    'label' => __('Document Downloads'),
+    'add_more' => true,
+    'fields' => [
+        [
+            'type' => 'text',
+            'label' => __('Title'),
+            'field' => 'document-download-title',
+            'columns' => 12
+        ],
+        [
+            'type' => 'file',
+            'field' => 'document-download-image',
+            'label' => 'Image',
+            'columns' => 12
+        ],
+        [
+            'type' => 'file',
+            'field' => 'document-download-file',
+            'label' => 'File',
+            'columns' => 12,
+            'options' => [
+                'basic' => true
+            ]
+        ],
+        [
+            'type' => 'text',
+            'label' => __('Description'),
+            'field' => 'document-download-description',
+            'columns' => 12
+        ]
+    ]
+]);
