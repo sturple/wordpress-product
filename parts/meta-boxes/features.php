@@ -114,3 +114,9 @@ piklist('field',[
         ]
     ]
 ]);
+
+piklist('field',[
+    'type' => 'textarea',
+    'field' => 'ecwid',
+    'label' => __('ecwid')
+]);
