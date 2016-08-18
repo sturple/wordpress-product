@@ -66,3 +66,24 @@ piklist('field',[
         ]
     ]
 ]);
+
+piklist('field',[
+    'type' => 'group',
+    'field' => 'images',
+    'label' => __('Images'),
+    'add_more' => true,
+    'fields' => [
+        [
+            'type' => 'text',
+            'label' => __('Title'),
+            'field' => 'image-title',
+            'columns' => 12
+        ],
+        [
+            'type' => 'file',
+            'field' => 'image-image',
+            'label' => 'Image',
+            'columns' => 12
+        ]
+    ]
+]);
