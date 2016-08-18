@@ -7,6 +7,7 @@
  * Author: Shawn Turple / Robert Leahy
  * Author URI: http://turple.ca
  * License: GPL-3.0
+ * Plugin Type: Piklist
  */
 
 if ( file_exists( $composer_autoload = __DIR__ . '/vendor/autoload.php' ) /* check in self */
@@ -17,3 +18,7 @@ if ( file_exists( $composer_autoload = __DIR__ . '/vendor/autoload.php' ) /* che
 ) {
     require_once $composer_autoload;
 }
+
+call_user_func(function () {
+    $controller=new \Fgms\Product\Controller(new \Fgms\WordPress\WordPressImpl());
+});
