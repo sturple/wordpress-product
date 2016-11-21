@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Features
+Title: Benefits
 Post Type: product
 Order: 30
 Collapse: true
