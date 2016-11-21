@@ -24,7 +24,10 @@ class Controller
                 'name' => $this->wp->__('Products',$this->domain),
                 'singular_name' => $this->wp->__('Product',$this->domain)
             ],
-            'public' => true
+            'public' => true,
+            'has_archive' => true,
+            'hierarchical' => true,
+            'supports'=> array('title','editor','page-attributes','revisions','excerpt','thumbnail')
         ]);
     }
 
