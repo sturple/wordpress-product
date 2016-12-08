@@ -20,5 +20,31 @@ if ( file_exists( $composer_autoload = __DIR__ . '/vendor/autoload.php' ) /* che
 }
 
 call_user_func(function () {
+    
+    add_filter('piklist_pre_render_field',function($field){
+        $piklist_editor_options = array( // Pass any option that is accepted by wp_editor()
+             'wpautop' => false,
+             'media_buttons' => true,
+             'shortcode_buttons' => true,
+             'teeny' => true,
+             'dfw' => false,
+             'quicktags' => true,
+             'editor_css'=> false,
+             'drag_drop_upload' => true,
+             'tinymce' => array(
+                'resize' => false,
+                'wp_autoresize_on' => true
+            )
+        );       
+        if (
+            ($field['field'] == 'description') OR 
+            ($field['field'] == 'component-text')
+            )
+        {
+          $field['options'] = $piklist_editor_options;          
+        }
+       
+        return $field;        
+    },10,4);
     $controller=new \Fgms\Product\Controller(new \Fgms\WordPress\WordPressImpl());
 });
