@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Image Gallery
-Post Type: product
+Post Type: product, service-kit, product-accessory
 Order: 20
 Collapse: true
 Priority: high
@@ -12,7 +12,7 @@ piklist('field',[
     'type' => 'group',
     'field' => 'gallery-images',
     'label' => __(''),
-    'description' => _('<span style="margin-bottom: 12px ;display:block" >These images will be arranged into a gallery below the introductory text.  Thumbs are generated automatically. </span> Ideal image size would be <strong>1200px by 800px </strong> for horizontal images.  For vertical images, ideally the height should be maximum 800px.'),
+    'description' => _('<span style="margin-bottom: 12px ;display:block" >Image thumbs will only be added below the image if there is more than one image. Thumbs are generated automatically. </span> Ideal image size would be <strong>1200px by 800px </strong> for horizontal images.  For vertical images, ideally the height should be maximum 800px.'),
     'add_more' => false,
     'fields' => [
         [
